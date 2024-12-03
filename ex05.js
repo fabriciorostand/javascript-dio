@@ -1,3 +1,5 @@
+// Programa para calcular o IMC e indicar a condição de peso de uma pessoa
+
 function calcularImc (peso, altura) {
     return (peso / Math.pow(altura, 2)).toFixed(1);
 }
