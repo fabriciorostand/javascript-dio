@@ -1,3 +1,5 @@
+// Entendendo sobre objetos 
+
 const pessoa = {
     nome: 'Fabricio',
     idade: 23,
