@@ -16,7 +16,8 @@ class Pessoa {
     }
 
     calcularImc () {
-        return this.peso / (this.altura * this.altura);
+        const imc = this.peso / (this.altura * this.altura);
+        return imc;
     }
 }
 
@@ -36,8 +37,8 @@ function classificarImc(imc) {
 
 function main () {
     const fabricio = new Pessoa('Fabricio', 70, 1.90);
-    const isabelli = new Pessoa('Isabelli', 80, 1.72);
-    const jaqueline = new Pessoa('Jaqueline', 50, 1.70);
+    const isabelli = new Pessoa('Isabelli', 50, 1.70);
+    const jaqueline = new Pessoa('Jaqueline', 80, 1.72);
 
     console.log(`${fabricio.nome}: ${fabricio.calcularImc().toFixed(1)} de IMC, ${classificarImc(fabricio.calcularImc())}`);
     console.log(`${isabelli.nome}: ${isabelli.calcularImc().toFixed(1)} de IMC, ${classificarImc(isabelli.calcularImc())}`);
