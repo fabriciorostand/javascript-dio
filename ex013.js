@@ -4,12 +4,13 @@ notas.push(5);
 notas.push(7);
 notas.push(6);
 
-//Imprimindo o tamanho do Array com "length"
+let soma = 0;
 
-console.log(notas.length);
-
-const nome = 'Fabricio Rostand';
-
-for (i = 0; i < nome.length; i++) {
-    console.log(nome[i]);
+for (i = 0; i < notas.length; i++) {
+    const nota = notas[i];
+    soma = soma + nota;
 } 
+
+const media = soma / notas.length;
+
+console.log(media);
