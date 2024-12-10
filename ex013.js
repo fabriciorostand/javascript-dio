@@ -8,4 +8,8 @@ notas.push(6);
 
 console.log(notas.length);
 
-for (i = 0, )
+const nome = 'Fabricio Rostand';
+
+for (i = 0; i < nome.length; i++) {
+    console.log(nome[i]);
+} 
